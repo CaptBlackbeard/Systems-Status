@@ -16,7 +16,7 @@
     Servername2 is up!
 
 .Notes
-    Requires a srvlst.txt file to be n the same directory as the .ps1 file.
+    Requires a srvlst.txt file to be in the same directory as the .ps1 file.
 #>
 
 #Turns off error messages
@@ -34,7 +34,7 @@ $a.WindowSize = $b
 $scriptpath = $MyInvocation.MyCommand.Path
 $dir = Split-Path $scriptpath
 
-#Tests for text file with list of Exchange server names. If non exists in the directory the script will create the document open it and the user must then populate the list. 
+#Tests for text file with list of server names. If none exists in the directory the script will create the text file, open it, and the user must then populate the list. 
 $path = "$dir\srvlst.txt"
     if(!(Test-Path -path $path))
         {
@@ -71,4 +71,3 @@ Write-Host "--------------------" -Foreground Red
 Start-Sleep -s 3
 cls
 }
-
