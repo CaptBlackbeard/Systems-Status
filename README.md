@@ -1,7 +1,7 @@
 Systems-Status
 ==============
 
-PowerShell script using test-connection to display weather a system is up or down.
+PowerShell script using test-connection to display if a system is up or down.
 
 Systems-Status
 Copyright (C) 2013  Zachary Zeilinger
